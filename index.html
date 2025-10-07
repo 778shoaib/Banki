@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie Website</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -10,433 +11,396 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <header class="hero">
-        <nav class="navbar">
-        <div class="logo"> Banki</div>
-        <ul>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">APL For Developer</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar flex between wrapper">
+        <a href="#" class="logo">Foodie</a>
+
+        <!-- DESKTOP MENU -->
+        <ul class="navlist flex gap-3">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">contacts</a>
+          </li>
         </ul>
-        <button class="btn">Apply Now it,s Free</button>
-       </nav>
-        <div class="hero-content">
-        <h1 class="content-1">Unified, global <span class="highlight"><span id="element"></span></span>to<br>grow your revenue</h1>
-             
-        <div class="cta">
-            <p>Create virtual cards, accept payments, send and receive money</p>
-        </div> 
-        <div class="hero-button">
-            <a href="#" class="btn-2"><i class="fa-solid fa-message" style="padding-right: 5px;"> </i><span style="padding-left:16px ;">Your Email Address</span></a>
-            <a href="#" class="btn-3">Get Start</a>
+        <div class="desktop-action flex gap-2">
+          <a href="#" class="cart-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-value">0</span>
+          </a>
+          <a href="#" class="btn">
+            Sign in &nbsp;
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </a>
+          <a href="#" class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
-        <p class="p1"><i class="fa-regular fa-star"></i><span style="padding-left:16px ;"></span>We Never Use Any Email For Sales, Its Private</span></p>
-       </div>
-       <div class="image-container">
-       <img src="./c3fc3bfe0fa154523d497f5eedda5854_1-removebg-preview 2.png" width="500px" height="534px">
-       </div>
-
+        <!-- MOBILE MENU -->
+        <ul class="mobile-menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">contacts</a>
+          </li>
+          <li>
+            <a href="#" class="btn">
+              Sign in &nbsp;
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-        <!-- feature section 1 -->
-         <section>
+      <section>
+        <div class="hero-section flex wrapper gap-4">
+          <div class="content">
+            <h1>Enjoy Your Dilicious <span>Food</span></h1>
+            <p class="para">
+              We will fill your tummy with dilicious<br />
+              food with fast delivery
+            </p>
+            <div class="flex gap-2">
+              <a href="#" class="btn">Order Now</a>
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="images/delivery-boy.png" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="p-top wrapper">
+          <div class="text-center">
+            <h5>Our Services</h5>
+            <h2>How does it work</h2>
+          </div>
+
+         <div class="flex text-center mt-4 gap-4">
+          <div class="Services-card">
+            <div class="image-container">
+              <img src="./images/easy-to-order.png" />
+            </div>
+            <h3>Easy to Order</h3>
+            <p>You only to need steps in oderring food.</p>
+          </div>
+
+          <div class="Services-card">
+            <div class="image-container">
+              <img src="./images/fast-delivery.png" />
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Delivery that is always ontime even faster.</p>
+          </div>
+
+          <div class="Services-card">
+            <div class="image-container">
+              <img src="./images/best-quality.png" />
+            </div>
+            <h3>Best Quality</h3>
+            <p>Not only fast by for us in quality is always number one</p>
+          </div>
+
+        </div>
+      </section>
       
-        <h1 class="heading-1">Feel the best experience with our
-            features</h1>
-   
-<div class="parent-card">
-<div class="card">
-
-    <div class="child-1">
-        <h2>Personal wallet for your
-transactions</h2>
-
-<div class="ul-list">
-    <ul style="padding-right: 80px ; width: 50%;">
-        <li>Most popular Crypto
-         Wallets</li>
-        <li>USA & EUR Accounts</li>
-        <li>Create Virtual Cards</li>
-    </ul>
-    <ul style="width: 50%;">
-        <li>Transaction Statistics</li>
-        <li>Generate Invoices</li>
-        <li>Withdrawal to your
-         crypto account</li>
-    </ul>
-</div>
-
-    </div>
-
-     <div class="card-image">
-                    <img src="./image_3-removebg-preview 1 (2).png" width="300" height="300">
-
-                 </div>
-</div>
-
-<div class="card">
-
-    <div class="child-1">
-        <h2>Card management with
-team wallet</h2>
-
-<div class="ul-list">
-    <ul style="padding-right: 80px ; width: 50%;">
-        <li>Create Virtual Cards</li>
-        <li>Create Team</li>
-        <li>Complete management of the team</li>
-    </ul>
-    <ul style="width: 50%;">
-        <li>Detailed statistics of your team
-        and its members</li>
-    </ul>
-</div>
-    </div>
-     <div class="card-image">
-        <img src="./image_3__1_-removebg-preview 1.png" width="500" height="270">
-
-    </div>
-</div>
-</div>
-         </section>
-        <!-- feature section 2 -->
-         <section>
-    <div class="card-2">
-        <div class="container">
-
-        <div class="header-1">
-            <h1>Expend opportunitles with
-            Marchant</h1>
-            <p>Business wallet for your online store</p>
-        </div>
-        <div class="heading-p">
-            <div class="primary">
-            <h3>Transactions</h3>
-            <p>History of all transactions and
-            their statistics</p>
-
-            <h3 class="s1">APL Connection</h3>
-            <p>Effortlessly integrate your online
-            store with out APL to easily and
-            conveniently track comprehensive
-            statistics</p>
-             <button class="btn-4">Create Account</button>
+      <section>
+         <div class="wrapper p-top ">
+          <div class="text-center">
+            <h5>Our Menu</h5>
+            <h2>The Most Popular</h2>
+          </div>
+          <div class="card-list text-center flex mt-4 gap-2">
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/burger.png" >
+              </div>
+              <h4>Double Beef Burger</h4>
+              <h4 class="price">$200</h4>
+              <a href="#" class="btn">Add to cart</a>
             </div>
 
-             <div class="primary">
-            <h3>Overview</h3>
-            <p>All the wallet Stats</p>
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/pizza.png" >
+              </div>
+              <h4>Veggie Pizza</h4>
+              <h4 class="price">$10.33</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
 
-            <h3 class="s1">Best conditions</h3>
-            <p>We offer only the best conditions for
-            our merchants</p>
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/fried-chicken.png" >
+              </div>
+              <h4>Fired chicken</h4>
+              <h4 class="price">$13.37</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/chicken-roll (1).png" >
+              </div>
+              <h4>Chicken Roll</h4>
+              <h4 class="price">$7.50</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/sandwich.png" >
+              </div>
+              <h4>Sub Sanwhich</h4>
+              <h4 class="price">$6.68</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/lasagna.png" >
+              </div>
+              <h4>Chicken Lasagna</h4>
+              <h4 class="price">$16,78</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/spaghetti.png" >
+              </div>
+              <h4>Itallian Spagetti</h4>
+              <h4 class="price">$7.65</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+
+            <div class="order-card">
+              <div class="card-image">
+                <img src="./images/chicken-roll.png" >
+              </div>
+              <h4>Spring Roll</h4>
+              <h4 class="price">$9.31</h4>
+              <a href="#" class="btn">Add to cart</a>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+      <section>
+        <div class="wrapper p-top flex gap-3 ">
+          <div class="image-container">
+            <img src="./images/delivery-boy-with-phone.png" >
+          </div>
+          <div class="review-container">
+            <h5>Our reviews</h5>
+            <h2>What they say</h2>
+            
+              <div class="swiper mySwiper">
+    <div class="swiper-wrapper mt-4">
+
+      <div class="swiper-slide"> 
+        <div class="flex gap-2">
+          <div class="profile">
+            <img src="./images/profile1.jpeg" >
+          </div>
+          <div>
+            <h4>Guy Kawkins</h4>
+            <div class="mt-half">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="para">Foodie is the best.besides the many dilicious food and the services is also very good,espacially very fast delivery</p>
+      </div>
+
+      <div class="swiper-slide"> 
+        <div class="flex gap-2">
+          <div class="profile">
+            <img src="./images/profile2.jpeg" >
+          </div>
+          <div>
+            <h4>Sophia Anderson</h4>
+            <div class="mt-half">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="para">Freash ingredients,creative menu and warm service make this spot ahidden gem. Perfect for casual dinner or special neight out.Truly a Foodie,s paradies!</p>
+      </div>
+
+      <div class="swiper-slide">  
+        <div class="flex gap-2">
+          <div class="profile">
+            <img src="./images/profile3.jpeg" >
+          </div>
+          <div>
+            <h4>Olivia smith</h4>
+            <div class="mt-half">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="para">Dilisious dishes,cozy ambiance, and exceptional service.Amust visited for food lover seeking bold flavor and unforgettale dining experiences. Highly recommended every bite delights!</p>
+      </div>
+      </div>
+     <div class="flex between">
+      <a href="#" class="arrow" id="prev"> 
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <a href="#" class="arrow" id="next"> 
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+                </div>
+               </div>
              
-            </div>
-            
-          
-        </div>
-        </div>
-        <div class="card-image">
-        <img src="./image_5-removebg-preview 1.png" width="500" height="500">
-
-    </div>
-    
-    </div>
-         </section>
-         <!-- feature section 3 -->
-        <section>
-            <div class="parent-card-3">
-            <div class="card-3" style="width: 30%;">
-             <div class="image-1">
-                   <img src="./image_5__1_-removebg-preview 1.png" alt="">
-             </div>
-             <div class="active">
-                <h3 class="h-1">Accept Visa & Master Card</h3>
-                <p class="para-1">Support for payments in flat
-                currency</p>
-             </div>   
-            </div>
-
-             <div class="card-3" style=" width:30%;">
-             <div class="image-1">
-                   <img src="./Group 2.png" alt="">
-             </div>
-             <div class="active">
-                <h3 class="h-1">Setting of your store</h3>
-                <p class="para-1">Top-ups, payments and more!</p>
-             </div>   
-            </div>
-
-             <div class="card-3" style=" width:30%;">
-             
-             <div class="active">
-                <h1 class="h-2">Check our other Product features</h1>
-                <button class="btn-5">View More <i class="fa-solid fa-arrow-right"></i></button>
-             </div> 
-             <div class="image-1">
-                   <img  class="image-png" src="./Vector.png" width="130px" >
-             </div>  
-            </div>
-            </div>
-        </section>
-         <!-- feature section 4 -->
-        <section>
-            <div class="heading-2">
-            <h1>Variety of virtual cards</h1>
-            <p class="para-2">Create LinkPay virtual cards for your business, advertising purchases and online
-            payment, We offer favorable conditions for all users</p>
-            </div>
-
-
-
-             <div class="card-4">
-        <div class="container-1">
-
-        <div class="header-2">
-            <h1>Virtual card for advertising</h1>
-            <p class="private" style=" color: #6D676D;font-size: 20px;">Virtual card for all advertising platforms<br>
-             including Google Ads, TikTok Ads</p>
-        </div>
-        <div class="private-1">
-            <div style="padding-right: 30px;">
-            <h2>Up to 29%</h2>
-            <p class="anti">Card top-up fees</p>
-            
-            </div>
-
-            <div style="padding: 0 20px 0 10px; border-left: 3px solid #6D676D;">
-            <h2>Up to 1% / min o$</h2>
-            <p  class="anti">Card transaction fee</p>
-            </div>
-
-            <div style="border-left: 3px solid #6d676d; padding: 0 20px;">
-            <h2>Up to 50$</h2>
-            <p  class="anti">Monthly card fee</p>
-            </div>
-        </div>
-        <button class="btn-6">Create Account</button>
-        
-        </div>
-        <div class="image-auto">
-            <img src="./image_4-removebg-preview (1) 1.png" style="padding-top: 73px;">
-        </div>
-    </div>
-
-        </section>
-         <!-- feature section 5 -->
-        <section>
-            <div class="card-5">
-                <div class="image-auto-2">
-                        <img src="./Rectangle 15.png" width="350px" height="350px" style="padding-top: 9px;">
-                    </div>
-
-                <div class="container-2">
-        <div class="header-2">
-            <h1>Virtual card facebook premium</h1>
-            <p class="private" style=" color: #6D676D;font-size: 20px;">Virtual payment card designed for facebook Ads</p>
-        </div>
-         <div class="private-1">
-            <div style="padding-right: 30px;">
-            <h2>Up to 29%</h2>
-            <p class="anti">Card top-up fees</p>
-            
-            </div>
-
-            <div style="padding: 0 20px 0 10px; border-left: 3px solid #6D676D;">
-            <h2>Up to 1% / min o$</h2>
-            <p  class="anti">Card transaction fee</p>
-            </div>
-
-            <div style="border-left: 3px solid #6d676d; padding: 0 20px;">
-            <h2>Up to 50$</h2>
-            <p  class="anti">Monthly card fee</p>
-            </div>
-        </div>
-        <button class="btn-6">Issue a card</button>
-            </div>
-            </div>
-        </section>
-        <!-- featuer section 6 -->
-        <section>
-            <div class="card-6">
-        <div class="container-1">
-
-        <div class="header-2">
-            <h1>Universal card for online<br>
-            shopping</h1>
-            <p class="private" style=" color: #6D676D;font-size: 20px;">Virtual card for all advertising platforms<br>
-including Google Ads, TikTok Ads</p>
-        </div>
-        <div class="private-1">
-            <div style="padding-right: 30px;">
-            <h2>Up to 29%</h2>
-            <p class="anti">Card top-up fees</p>
-            
-            </div>
-
-            <div style="padding: 0 20px 0 10px;">
-            <h2>Up to 1% / min o$</h2>
-            <p  class="anti">Card transaction fee</p>
-            </div>
-
-            <div style=" padding: 0 20px;">
-            <h2>Up to 50$</h2>
-            <p  class="anti">Monthly card fee</p>
-            </div>
-        </div>
-        <button class="btn-7">Issue a card</button>
-        
-        </div>
-        <div class="image-auto">
-            <img src="./Rectangle 19.png" width="400" height="350">
-        </div>
-    </div>
-        </section>
-        <!-- feature section 7 -->
-         <section>
-            <div class="heading-3">
-            <h2>Flexible Pricing Plane</h2>
-            <h1>Choose Pricing of virtual card</h1>
-            <p class="para-3">Choose the rate that suits you or contact us for a custom rate</p>
-            </div>
-
-
-            <div class="simple">
-                <img  src="./image_4__1_-removebg-preview 1.png" style=" padding: 70px 0 0 50px;" width="1100" height="500">
-
-            </div>
-         </section>
-         <!-- feature section 8  -->
-          <section>
-            <div class="card-7">
-             <div class="simple-2">
-                    <img src="./image 6 (1).png" width="450" height="360" style="margin-left: 100px;">
-                </div>
-
-                        <h1>Invite friends and get up to<br>
-                         $20 for each new user</h1>
-                         <p style="padding-top: 20px;">We have created a referral program that no one has ever done<br>
-                         before, get passive income in 100% of our commissions service</p>
-                         <button class="btn-8">Invite Friends</button>
-
-                 <div class="btn-container">
-                    <button class="btn-9">1$<span class="s1">Registration</span></button>
-                    <button class="btn-9">0.10$<span class="s1">Link Visit</span></button>
-                    <button class="btn-9">5$-10$<span class="s1">First Deposit</span></button>
-                    <button class="btn-9">5$<span class="s1">Purchase virtual card</span></button> 
-                    <button class="btn-9">5$-29$<span class="s1">Subscribtion purchase</span></button>  
-                    <button class="btn-9">20%<span class="s1">Service fees</span></button> 
-                    <button class="btn-9">5o$<span class="s1">Opening Merchant</span></button>  
-                    </div>
-                    
-                
-
-
-            </div>
-          </section>
-          <!-- feature section 9 -->
-           <section>
-            <h1 class="heading-4"> 
-                Compare fees with an example
-            </h1>
-            <div class="bar">
-                <h1>$50.000</h1>
-                <h1>$20</h1>
-                <h1>100</h1>
-                <h1>Issued cards</h1>
-
-
-            </div>
-
-           </section>
-           <!-- feature 10 -->
-            <section>
-                <h1 class="heading-5" >Save up to 62% on high advertising voumes</h1>
-
-                <div class="simple-3">
-                    <img src="./image 9.png" width="550">
-                </div>
-                <div class="header-3">
-                    <h1 style="color: white;">Sign up now</h1>
-                    <p style="padding-top: 20px; color: white;">Sign up and use the services for free!</p>
-                    <button class="btn-10">Sign Up</button>
-                </div>
-                
-
-
-
-            </section>
-
-            <!-- Footer -->
-             <footer>
-                <div class="footer-container">
-
-                    <div class="footer-first">
-                        <h2>Banki</h2>
-                <ul>
-                    <li>Technology Park</li>
-                    <li>8-14 Marie Curies Street</li>
-                    <li>09876 Barchelona</li>
-                </ul>
-                 <div class="footer-right">
-            www.shoaib.com / All right reserved. 
-                 </div>
-                 <i class="fa-brands fa-facebook"></i>
-                 <i class="fa-brands fa-linkedin"></i>
-                 <i class="fa-brands fa-telegram"></i>
-                 <i class="fa-brands fa-x-twitter"></i>
-             </div>
-                    <div class="footer-second">
-                        <h2>Products</h2>
-                <ul>
-                    <li>Mass payouts</li>
-                    <li>Payment links,plugins</li>
-                    <li>Donate</li>
-                    <li>Currency exchange</li>
-                    <li>Virtual Cards</li>
-                    <li>Payment processing</li>
-                
-                </ul>
-            </div>
-            
-                    <div class="footer-third">
-                        <h2>Management</h2>
-                <ul>
-                    <li>Multi currency wallet</li>
-                    <li>Crypto wallet</li>
-                    <li>lnvoicing</li>
-                    <li>Transfers</li>
-                    <li>vIBAN</li>
-                    <li>Cashback</li>
-                </ul>
-            </div>
-
-            <div class="footer-third">
-                        <h2>Social Media</h2>
-                <ul>
-                    <li><span class="s2"><i class="fa-brands fa-facebook"></i></span>FaceBook</li>
-                    <li><span class="s2"><i class="fa-brands fa-linkedin"></i></span> Linkedin</li>
-                    <li><span class="s2"><i class="fa-brands fa-telegram"></i></span> Telegram</li>
-                    <li><span class="s2"><i class="fa-brands fa-x-twitter"></i> </span>Twitter</li>
-                </ul>
-            </div>
-         
-     </div>        
-     </footer>
+           </div>
+          </div>
+      </section>
     </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-    var typed = new Typed('#element', {
-      strings: ['Saving.', 'Success.','Earning.'],
-      typeSpeed: 50,
-    });
-  </script>
-    
-</body>
+
+    <footer>
+      <div class="footer-container">
+        <div class="flex wrapper gap-4">
+          <div class="footer-wrapper">
+            <a href="#" class="logo">Foodie</a>
+
+            <p class="mt-one-half">
+              We will fill your tummy with dilicious<br />
+              food with fast delivery
+            </p>
+
+             <div class="flex gap-2 mt-one-half">
+      
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="Social-icon">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+            </div>
+
+
+
+          </div>
+
+          <ul class="footer-wrapper">
+            <li>
+              <h4>Our Menu</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">special</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">popular</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">category</a>
+            </li>
+          </ul>
+
+          <ul class="footer-wrapper">
+            <li>
+              <h4>Company</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Why foodie</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Partner with us</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">about us</a>
+            </li>
+             <li class="mt-one-half">
+              <a href="#" class="footer-link">FAQ,s</a>
+            </li>
+          </ul>
+
+          <ul class="footer-wrapper">
+            <li>
+              <h4>Our Menu</h4>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Acount</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Support Center</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">Feedback</a>
+            </li>
+            <li class="mt-one-half">
+              <a href="#" class="footer-link">contacts</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  </body>
 </html>
